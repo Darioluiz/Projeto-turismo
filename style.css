@@ -36,14 +36,37 @@ body{
   font-size: 1.6rem;
   font-weight: bold;
 }
+
+nav {
+  width: 112rem;
+  margin: 4rem auto  ;
+  display: flex;
+  justify-content: space-around;
+  
+
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+nav a:hover{
+  color: var(--text-tertiary);
+  cursor: pointer;
+}
+
 h2{
   font-size: 3.2rem;
+  margin-bottom: 0.4rem;
 }
 
 main{
 
   margin: 8.8rem auto 4rem;
   width: 112rem;
+  border-bottom: var(--border-primary) 0.1rem solid;
 }
 
 main img {
@@ -64,6 +87,10 @@ main img {
   margin-block: 0.8rem 4rem;
  
 }
+
+.introduction img {
+  height: 66rem;
+}
   
 .introduction p {
   text-align: center;
@@ -77,15 +104,9 @@ main img {
 
 /*SECTION*/
 
-.card_one span {
+#card_one span {
   color: var(--text-headline);
   text-transform: uppercase;
-}
-
-.card_one h2 {
-  margin-block: 0.2rem 0.8rem;
-  font-size: 3.2rem;
- 
 }
 
  p{
@@ -94,35 +115,79 @@ main img {
   
 }
 
-.card_one img {
-  margin-top: 6.4rem;
+#card_one img {
+  margin-block: 6.4rem 2rem;
 }
 
-.card_one img + h2{
-  margin-block: 2rem 0.4rem;
-}
-
-.card_one br + span {
+#card_one br + span {
  color: var(--text-secondary);
  text-transform: none;
  
  }
 
-  ul li::marker{
-  color:var(--text-secondary)
-    
+ br + span {
+  color: var(--accent-blue);
  }
 
- .card_one ul li {
+  ul li::marker{
+  color:var(--text-secondary);
+     
+ }
+
+ ul{
+  margin-left: 2rem;
+ }
+
+
+ #card_one ul li, #card_two ul li {
   color: var(--accent-blue);
   
   
  }
 
- .card_two img {
+ #card_two img, #card_three img {
   margin-block: 4.8rem 2rem;
  }
 
- .card_two h2 {
-  margin-bottom: 0.4rem;
+ #card_three span, #card_two span{
+  color: var(--text-secondary);
  }
+
+ #card_three li {
+  color: var(--accent-purple);
+ }
+
+ #card_three li + li {
+  color: var(--accent-pink);
+ }
+
+ #card_three li:last-child{
+  color: var(--accent-orange);
+  margin-bottom: 4rem;
+ }
+
+ main + P {
+  margin-block: 4rem 6.5rem;
+ }
+
+ main + p, footer{
+  width: 112rem;
+  margin-inline: auto;
+  text-align: center;
+ }
+
+footer svg{
+  padding-top: 0.5rem;
+ 
+}
+
+
+footer {
+  margin-bottom: 4.8rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  
+ }
+
+
+
