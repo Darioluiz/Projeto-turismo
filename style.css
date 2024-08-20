@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+  font-family: "Open Sans", system-ui;
 }
 
 :root{
@@ -36,7 +36,9 @@ body{
   font-size: 1.6rem;
   font-weight: bold;
 }
-
+h2{
+  font-size: 3.2rem;
+}
 
 main{
 
@@ -47,6 +49,8 @@ main{
 main img {
   width: 100%;
   border-radius: 2.8rem;
+  height: 35rem;
+  
 }
 
 .introduction span {
@@ -60,13 +64,65 @@ main img {
   margin-block: 0.8rem 4rem;
  
 }
-
+  
 .introduction p {
   text-align: center;
   margin-block: 2.4rem 4.4rem;
   font-weight: 400;
   font-style: italic;
+  padding-bottom: 4rem;
+
+  border-bottom: var(--border-primary) 0.1rem solid;
 }
 
+/*SECTION*/
 
+.card_one span {
+  color: var(--text-headline);
+  text-transform: uppercase;
+}
 
+.card_one h2 {
+  margin-block: 0.2rem 0.8rem;
+  font-size: 3.2rem;
+ 
+}
+
+ p{
+  font-size: 1.6rem;
+  font-weight: normal;
+  
+}
+
+.card_one img {
+  margin-top: 6.4rem;
+}
+
+.card_one img + h2{
+  margin-block: 2rem 0.4rem;
+}
+
+.card_one br + span {
+ color: var(--text-secondary);
+ text-transform: none;
+ 
+ }
+
+  ul li::marker{
+  color:var(--text-secondary)
+    
+ }
+
+ .card_one ul li {
+  color: var(--accent-blue);
+  
+  
+ }
+
+ .card_two img {
+  margin-block: 4.8rem 2rem;
+ }
+
+ .card_two h2 {
+  margin-bottom: 0.4rem;
+ }
